@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<! DOCTYPE html PUBLIC "-//w3c/DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml-Strict.dtd">
+<html xmlns="http://www.x3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+	<title></title>
+</head>
+
+<body>
+	<h1>welcome!{{username}}</h1>
+	{%for nav in nav_list%}
+	<li><a href="">{{nav}}</a></li>
+	{%endfor%}
+	<div>
+		<h3>{{blog['title']}}</h3>
+		<p>{{blog['content']}}</p>
+	</div>
+	<div>
+		{%for item in blog%}
+		{{item}}
+		{%endfor%}
+	</div>
+	<div>
+		{%for k,v in blog.items()%}
+		{{k}}:{{v}}
+		{%endfor%}
+	</div>
+</body>
+</html>
