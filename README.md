@@ -14,3 +14,25 @@ flask-so-easy是pythoner.cn里视频<Flask快速上手>学习代码
 * py07：mysql sqlite3 python对数据库操作
 * py08：Flask 会话 cookie使用
 * py09：Flask session
+
+### microblog
+
+microblog是The Flask Mega-Tutorial学习代码
+* Part I: Hello, World!
+* Part II: Templates
+* Part III: Web Forms
+* Part IV: Database
+* Part V: User Logins
+* Part VI: Profile Page And Avatars
+* Part VII: Unit Testing
+* Part VIII: Followers, Contacts And Friends
+* Part IX: Pagination
+* Part X: Full Text Search
+* Part XI: Email Support
+* Part XII: Facelift
+* Part XIII: Dates and Times
+* Part XIV: I18n and L10n
+* Part XV: Ajax
+* Part XVI: Debugging, Testing and Profiling
+* Part XVII: Deployment on Linux (even on the Raspberry Pi!)
+* Part XVIII: Deployment on the Heroku Cloud
