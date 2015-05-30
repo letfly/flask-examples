@@ -1,7 +1,6 @@
 from app import app
-#from flask import render_template, flash, redirect
-#from .forms import LoginForm
-'''
+from flask import render_template, flash, redirect
+from .forms import LoginForm
 @app.route('/')
 @app.route('/index')
 def index():
@@ -32,7 +31,3 @@ def Login():
 							title='Sign In',
 							form=form,
 							providers=app.config['OPENID_PROVIDERS'])
-'''
-@app.route('/')
-def index():
-	return "Hello, World"
