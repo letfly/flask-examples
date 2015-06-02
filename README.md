@@ -36,3 +36,13 @@ microblog是The Flask Mega-Tutorial学习代码
 * Part XVI: Debugging, Testing and Profiling
 * Part XVII: Deployment on Linux (even on the Raspberry Pi!)
 * Part XVIII: Deployment on the Heroku Cloud
+
+### myproject
+myproject依照microblog自我编写的flask-demo
+* hello world
+* 连接数据库
+* 数据库迁移
+* 操作数据库
+* 表单
+* 用户注册
+* 用户登录
