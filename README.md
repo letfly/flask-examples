@@ -46,3 +46,6 @@ myproject依照microblog自我编写的flask-demo
 * 表单
 * 用户注册
 * 用户登录
+
+### naruto
+naruto是简单蓝图学习笔记
