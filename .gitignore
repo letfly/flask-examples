@@ -1,6 +1,11 @@
 *.swp
 *.pyc
 *.swo
+microblog/tmp/
 microblog/flask/*
 myproject/flask/*
 naruto/flask/*
+
+
+######
+example-oauth1-server_other/*
