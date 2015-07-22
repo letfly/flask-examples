@@ -8,4 +8,4 @@ naruto/flask/*
 
 
 ######
-example-oauth1-server_other/*
+oauth/oauth/*
