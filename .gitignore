@@ -9,3 +9,4 @@ naruto/flask/*
 
 ######
 oauth/oauth/*
+microblog/microblog_env/*
