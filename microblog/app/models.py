@@ -1,4 +1,5 @@
 from app import db
+from hashlib import md5
 
 
 class User(db.Model):
@@ -6,24 +7,30 @@ class User(db.Model):
     nickname = db.Column(db.String(64), index=True, unique=True)
     email = db.Column(db.String(120), index=True, unique=True)
     posts = db.relationship('Post', backref='author', lazy='dynamic')
+    about_me = db.Column(db.String(140))
+    last_seen = db.Column(db.DateTime)
 
     def is_authenticated(self):
-	return True
+        return True
 
     def is_active(self):
-	return True
+        return True
 
     def is_anonymous(self):
-	return False
+        return False
 
     def get_id(self):
-	try:
-	    return unicode(self.id) # python2
-	except NameError:
-	    return str(self.id) # python2 3
-	
+        try:
+            return unicode(self.id)  # python2
+        except NameError:
+            return str(self.id)  # python2 3
+
+    def avatar(self, size):
+        return 'http://www.gravatar.con/avatar/%s?d=mm&s=%d' % \
+            (md5(self.email.encode('utf-8')).hexdigest(), size)
+
     def __repr__(self):
-	return '<User %r>' % (self.nickname)
+        return '<User %r>' % (self.nickname)
 
 
 class Post(db.Model):
@@ -33,4 +40,4 @@ class Post(db.Model):
     user_id = db.Column(db.Integer, db.ForeignKey('user.id'))
 
     def __repr__(self):
-	return '<Post %r>' % (self.body)
+        return '<Post %r>' % (self.body)
